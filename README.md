@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github - Project 03 - Files](https://github.com/vanessaplj/project-03-four-cards)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Pages - Project 03 - Four Cards](https://vanessaplj.github.io/project-03-four-cards/)
 
 ## My process
 
