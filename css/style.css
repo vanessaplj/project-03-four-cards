@@ -5,50 +5,68 @@ body {
     min-height: 100vh;
     align-content: center;
 }
-
 main {
-    justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 /*--------------------------------------------------------------------------*/
 .sec1 {
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
     width: 45vw;
     text-align: center;
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:768px){
     .sec1{
-        width: 80vw;
-        margin-top: 5vh;
+        width: 20rem;
+        margin-top: 2rem;
     }
     h1{
-        font-size: 27px;
+        font-size: clamp(1.5rem, 2vw, 2.2rem);
     }
 }
 /*--------------------------------------------------------------------------*/
 .sec2 {
     display: flex;
+    align-items: center;
 }
 
 .card {
     border: 0px solid transparent;
-    width: 25vw;
-    height: 31vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    box-shadow: 1px 1px 10px #9caccf;
+    width: 20rem;
+    height: 13rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.75rem #9caccf;
 }
-
+.bar{
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.bar1{
+    background-color: hsl(180, 62%, 55%);
+}
+.bar2{
+    background-color: hsl(0, 78%, 62%);
+}
+.bar3{
+    background-color: hsl(34, 97%, 64%);
+}
+.bar4{
+    background-color: hsl(212, 86%, 64%);
+}
 .cardbody {
-    padding: 3vh;
-    font-size: 12px;
+    padding: 1rem;
+    font-size: 0.75rem;
     color: hsl(234, 12%, 34%);
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 figure {
@@ -56,27 +74,21 @@ figure {
     justify-content: flex-end;
 }
 
-.card1 {
-    align-content: center;
-}
 
-.card4 {
-    align-content: center;
-}
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     .sec2 {
         display: block;
-        margin-bottom: 5vh;
+        margin-bottom: 3rem;
     }
     .card {
-        width: 80vw;
-        height: 27vh;
+        width: 20rem;
+        height: 14rem;
+        margin-bottom: 2rem;
     }
     .cardbody {
-    font-size: 15px;
+    font-size: 0.8rem;
     }
     figure {
-    padding-top: 1vh;
+    padding-top: 0.5rem;
     }
 }
